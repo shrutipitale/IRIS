@@ -5,28 +5,31 @@ From the given ‘Iris’ dataset, predict the optimum number of clusters and re
 
 ## Columns
 
-1. **age**: Age of the individual in years.
-2. **sex**: Biological sex of the individual (male or female).
-3. **bmi**: Body Mass Index (BMI) of the individual, a measure of body fat based on height and weight.
-4. **children**: Number of children or dependents covered by the insurance plan.
-5. **smoker**: Binary indicator if the individual smokes (yes or no).
-6. **region**: The residential area of the individual in the United States (northeast, southeast, southwest, northwest).
-7. **charges**: Medical insurance costs billed by the insurance company.
+1. **Id**: Unique identifier for each entry.
+2. **SepalLengthCm**: Length of the sepal in centimeters.
+3. **SepalWidthCm**: Width of the sepal in centimeters.
+4. **PetalLengthCm**: Length of the petal in centimeters.
+5. **PetalWidthCm**: Width of the petal in centimeters.
+6. **Species**: Species of the iris flower (Setosa, Versicolor, or Virginica).
 
+## Usage
+
+- **Exploratory Data Analysis**: Visualize distributions and correlations between variables.
+- **Clustering**: Identify natural groupings of flowers based on their measurements.
 
 ## Steps to Perform Clustering Analysis
+1. **Importing Libraries and Loading Dataset**
+   - Start by importing necessary Python libraries (e.g., pandas, numpy, sklearn) and load the Iris dataset.
 
-1. **Load the Dataset:**
-   - Load the Iris dataset from scikit-learn or from a local CSV file if available.
+2. **Exploratory Data Analysis**
+   - Visualize distributions and correlations between variables such as Sepal Length, Sepal Width, Petal Length, and Petal Width. This helps understand the dataset's structure before clustering.
 
-2. **Preprocess the Data:**
-   - Perform preprocessing steps such as feature scaling if necessary.
+3. **Find The Number of Clusters**
+   - Use techniques like the Elbow Method or Silhouette Score to determine the optimal number of clusters for K-means clustering.
 
-3. **Determine Optimal Number of Clusters:**
-   - Use techniques like the Elbow Method or Silhouette Score to find the optimal number of clusters.
+4. **Train The Model**
+   - Implement a clustering algorithm (e.g., K-means) using the determined number of clusters to train the model on the dataset.
 
-4. **Cluster the Data:**
-   - Apply a clustering algorithm such as K-means using the determined number of clusters.
+5. **Cluster Visualization**
+   - Visualize the clustered data to observe how the flowers are grouped based on their measurements. This helps interpret the results and understand the distinct clusters.
 
-5. **Visualize the Clusters:**
-   - Plot the clustered data to visualize how the data points are grouped.
